@@ -35,6 +35,6 @@ INFO     2013-08-29 20:24:30,812 dev_appserver_multiprocess.py:658] Admin consol
 === Deploy to App Engine ===
 
 1. in app.yaml change your app's id
-2. in appengine_app/settings.py change SECRET_KEY
+2. create file appengine_app/secret.key and put your app secret key there
 3. Run 
     $ make deploy
