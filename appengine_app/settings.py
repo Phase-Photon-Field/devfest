@@ -19,7 +19,8 @@ DATABASES['default'] = {
 }
 AUTOLOAD_SITECONF = 'indexes'
 
-SECRET_KEY = 'secret_key'
+f = open('secret.key')
+SECRET_KEY = f.read()
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -57,10 +58,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 # corresponding output. Helps a lot with print-debugging.
 TEST_RUNNER = 'djangotoolbox.test.CapturingTestSuiteRunner'
 
-LANGUAGE_CODE = 'ru-ua'
+LANGUAGE_CODE = 'ka-ge'
 USE_I18N = True
 USE_L10N = True
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tbilisi'
 USE_TZ = False
 DECIMAL_SEPARATOR = ','
 DATE_FORMAT = 'd.m.Y'
@@ -88,7 +89,7 @@ PASSWORD_HASHERS = (
 
 
 ADMINS_EMAILS = (
-    'test@example.com',
+    'captain@pirrate.me',
 )
 
 LOGIN_URL = '/signin/'

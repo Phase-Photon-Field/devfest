@@ -6,3 +6,4 @@
 build
 src
 settings_prod.py
+appengine_app/secret.key
